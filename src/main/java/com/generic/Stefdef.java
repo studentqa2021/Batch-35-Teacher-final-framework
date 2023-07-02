@@ -18,6 +18,7 @@ public class Stefdef {
 	public void go_to_application_url() throws Exception {
 		 driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		System.out.println(BaseConfig.getConfig("URL"));
 		driver.navigate().to(BaseConfig.getConfig("URL")); 
 	}
 
